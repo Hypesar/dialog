@@ -1,0 +1,128 @@
+object fmViewInput: TfmViewInput
+  Left = 25
+  Height = 507
+  Top = 368
+  Width = 939
+  Caption = 'Zustandsraum-Modell'
+  ClientHeight = 477
+  ClientWidth = 939
+  DesignTimePPI = 144
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  LCLVersion = '2.2.2.0'
+  object btnA: TRadioButton
+    Left = 40
+    Height = 29
+    Top = 72
+    Width = 82
+    Caption = 'A [n n]'
+    OnChange = btnAChange
+    TabOrder = 0
+  end
+  object btnB: TRadioButton
+    Left = 40
+    Height = 29
+    Top = 128
+    Width = 86
+    Caption = 'B [n m]'
+    OnChange = btnBChange
+    TabOrder = 1
+  end
+  object BtnC: TRadioButton
+    Left = 40
+    Height = 29
+    Top = 176
+    Width = 82
+    Caption = 'C [p n]'
+    OnChange = BtnCChange
+    TabOrder = 2
+  end
+  object StaticText1: TStaticText
+    Left = 80
+    Height = 26
+    Top = 16
+    Width = 152
+    Caption = 'Mat. Dim. (n m p)'
+    TabOrder = 3
+  end
+  object MatDimN: TEdit
+    Left = 248
+    Height = 33
+    Top = 15
+    Width = 120
+    OnChange = MatDimNChange
+    TabOrder = 4
+    Text = '1'
+  end
+  object MatDimM: TEdit
+    Left = 421
+    Height = 33
+    Top = 17
+    Width = 120
+    TabOrder = 5
+    Text = '1'
+  end
+  object MatDimP: TEdit
+    Left = 595
+    Height = 33
+    Top = 16
+    Width = 120
+    TabOrder = 6
+    Text = '1'
+  end
+  object btnK: TRadioButton
+    Left = 42
+    Height = 29
+    Top = 232
+    Width = 87
+    Caption = 'K [m p]'
+    OnChange = btnKChange
+    TabOrder = 7
+  end
+  object StringGrid1: TStringGrid
+    Left = 224
+    Height = 192
+    Top = 104
+    Width = 500
+    TabOrder = 8
+  end
+  object btnV: TRadioButton
+    Left = 40
+    Height = 29
+    Top = 360
+    Width = 81
+    Caption = 'V [n n]'
+    OnChange = btnVChange
+    TabOrder = 9
+  end
+  object btnQ: TRadioButton
+    Left = 40
+    Height = 29
+    Top = 280
+    Width = 84
+    Caption = 'Q [n n]'
+    OnChange = btnQChange
+    TabOrder = 10
+  end
+  object btnR: TRadioButton
+    Left = 40
+    Height = 29
+    Top = 320
+    Width = 93
+    Caption = 'R [m m]'
+    OnChange = btnRChange
+    TabOrder = 11
+  end
+  object MainMenu1: TMainMenu
+    Left = 800
+    Top = 16
+    object MenuItem1: TMenuItem
+      Caption = '&Exit'
+      OnClick = MenuItem1Click
+      object MenuItem2: TMenuItem
+        Caption = '&close'
+        OnClick = MenuItem2Click
+      end
+    end
+  end
+end

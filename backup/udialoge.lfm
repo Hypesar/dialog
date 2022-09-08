@@ -1,0 +1,49 @@
+object OptArf: TOptArf
+  Left = 39
+  Height = 528
+  Top = 303
+  Width = 323
+  Caption = 'OptArf'
+  DesignTimePPI = 144
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  LCLVersion = '2.2.2.0'
+  object MainMenu1: TMainMenu
+    Left = 32
+    Top = 384
+    object MenuDatei: TMenuItem
+      Caption = '&Datei'
+      object MenuLoad: TMenuItem
+        Caption = '&Load'
+        OnClick = MenuLoadClick
+      end
+      object MenuExit: TMenuItem
+        Caption = '&Exit'
+        OnClick = MenuExitClick
+      end
+    end
+    object MenuOptMode: TMenuItem
+      Caption = 'Opt&Mode'
+      object MenuOptionen: TMenuItem
+        Caption = '&Optionen'
+        OnClick = MenuOptionenClick
+      end
+      object MenuIExe: TMenuItem
+        Caption = 'E&xe'
+      end
+      object MenuLjapunov: TMenuItem
+        Caption = '&Ljapunov'
+        OnClick = MenuLjapunovClick
+      end
+      object MenuIInpView: TMenuItem
+        Caption = 'Input&View'
+        OnClick = MenuIInpViewClick
+      end
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Filter = '*.m'
+    Left = 144
+    Top = 384
+  end
+end
