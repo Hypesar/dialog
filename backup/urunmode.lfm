@@ -1,7 +1,7 @@
 object Ljapunov: TLjapunov
-  Left = 5
+  Left = 865
   Height = 722
-  Top = 248
+  Top = 219
   Width = 1001
   Caption = 'Ljapunov'
   ClientHeight = 722

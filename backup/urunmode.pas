@@ -197,8 +197,9 @@ begin
  StrGridLjapunov.cells[1,0]:= 'Real';
  StrGridLjapunov.cells[2,0]:= 'Imag';
 
- Ax:=A;
- EIGRF (N,Ax,TM,Wr,Wi);
+ A_BKC (N,M,P,A,B,K,C,Ag);
+ Ax:=Ag;
+ EIGRF (N,Ax,U,Wr,Wi);
 
  for i:=1 to N do StrGridLjapunov.cells[0,i]:=FloatToStr(i);
  for i:=1 to N do StrGridLjapunov.cells[1,i]:=FloatToStr(Wr[i]);
@@ -356,7 +357,7 @@ Var
    A_BKC (N,M,P,A,B,K,C,Ag);
    Az:=Ag; Qz:=V;
 
-   LjpForm2:=False; Skip:=True;
+   LjpForm2:=False; Skip:=False;
    Ljapunow (N, Az,Qz,Pz,SU,LjpForm2,skip);
    N:=N;
    StrGridLjapunov.ColCount:= N+1;

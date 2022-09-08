@@ -69,9 +69,11 @@ VAR
            R: Mat; { M, M Stellenergiewichtungsmatrix}
            V: Mat; { N, N Kovarianzmatrix x0}
            W: Mat; { P, P Kovarianzmatrix y0}
+           U: Mat; { N, N Hesse-Transform }
           SU: Mat; { N, N Schur U-Matrix}
+
            H: MUH; {Nk,Nk Hesse-Matrix Achtung DIM-Explosionsgefahr!}
-           U: MUH; {Nk,Nk Gütefuntions-Wichtungsmatrix}
+     //      U: MUH; {Nk,Nk Gütefuntions-Wichtungsmatrix}
 
 
  Ky_LOG     : Mat; {freie Reglerelemente = 0 ; fixierten <> 0}
@@ -101,7 +103,7 @@ LjpIter    : Integer;
 LakIter    : Integer;
 LjpForm2,skip   : Boolean;
 Stabil     : Boolean;
-MaInvSel   : Integer;
+MaInvSel   : Integer=2;
 QDif       : Real;
 
 implementation

@@ -57,6 +57,7 @@ VAR
           Qx: Mat; { N, N Zustangswichtungsmatrix}
           Qz: Mat; { N, N Zustangswichtungsmatrix}
           Px: Mat; { N, N Ljapunov loesung}
+          Py: Mat; { N, N Ljapunov loesung}
           Pz: Mat; { N, N Ljapunov loesung}
           Ax: Mat; { N, N Ljapunov loesung}
           Az: Mat; { N, N Ljapunov loesung}
@@ -100,7 +101,7 @@ LjpIter    : Integer;
 LakIter    : Integer;
 LjpForm2,skip   : Boolean;
 Stabil     : Boolean;
-MaInvSel   : Integer;
+MaInvSel   : Integer=2;
 QDif       : Real;
 
 implementation
