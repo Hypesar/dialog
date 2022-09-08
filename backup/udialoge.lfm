@@ -1,7 +1,7 @@
 object OptArf: TOptArf
-  Left = 39
+  Left = 414
   Height = 528
-  Top = 303
+  Top = 300
   Width = 323
   Caption = 'OptArf'
   DesignTimePPI = 144

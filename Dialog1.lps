@@ -20,8 +20,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uDialoge"/>
-        <TopLine Value="72"/>
-        <CursorPos X="3" Y="81"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="47"/>
+        <CursorPos X="48" Y="70"/>
         <UsageCount Value="210"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -82,7 +83,6 @@
       </Unit>
       <Unit>
         <Filename Value="uLak.PAS"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="4"/>
         <TopLine Value="756"/>
         <CursorPos Y="768"/>

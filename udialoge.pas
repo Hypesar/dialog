@@ -94,7 +94,7 @@ end;
 procedure TOptArf.FormCreate(Sender: TObject);
 begin
  N:=1;M:=1;P:=1;
- A[1]:=1;B[1]:=1;C[1]:=1;K[1]:=1;Q[1]:=1;R[1]:=1;V[1]:=1;
+ A[1]:=-1;B[1]:=1;C[1]:=1;K[1]:=1;Q[1]:=1;R[1]:=1;V[1]:=1;
 
 end;
 
