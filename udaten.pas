@@ -71,7 +71,7 @@ VAR
            W: Mat; { P, P Kovarianzmatrix y0}
            U: Mat; { N, N Hesse-Transform }
           SU: Mat; { N, N Schur U-Matrix}
-
+          He: Mat; { N, N Hesse-Transform }
            H: MUH; {Nk,Nk Hesse-Matrix Achtung DIM-Explosionsgefahr!}
      //      U: MUH; {Nk,Nk Gütefuntions-Wichtungsmatrix}
 
@@ -105,6 +105,7 @@ LjpForm2,skip   : Boolean;
 Stabil     : Boolean;
 MaInvSel   : Integer=2;
 QDif       : Real;
+low,upp    : Integer;
 
 implementation
 

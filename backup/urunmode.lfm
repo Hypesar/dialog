@@ -1,21 +1,20 @@
 object Ljapunov: TLjapunov
-  Left = 865
-  Height = 722
-  Top = 219
-  Width = 1001
+  Left = 268
+  Height = 754
+  Top = 263
+  Width = 809
   Caption = 'Ljapunov'
-  ClientHeight = 722
-  ClientWidth = 1001
-  DesignTimePPI = 144
+  ClientHeight = 754
+  ClientWidth = 809
   Menu = MainMenu1
   OnActivate = FormActivate
   OnCreate = FormCreate
   LCLVersion = '2.2.2.0'
   object btnGrubLjaponv: TRadioGroup
-    Left = 32
-    Height = 184
-    Top = 48
-    Width = 752
+    Left = -22
+    Height = 123
+    Top = 54
+    Width = 501
     Anchors = []
     AutoFill = True
     Caption = 'Ljapunov  Linear Glg.                        Lösung via Schur'
@@ -26,55 +25,55 @@ object Ljapunov: TLjapunov
     ChildSizing.ShrinkVertical = crsScaleChilds
     ChildSizing.Layout = cclLeftToRightThenTopToBottom
     ChildSizing.ControlsPerLine = 1
-    ClientHeight = 154
-    ClientWidth = 748
+    ClientHeight = 103
+    ClientWidth = 497
     OnClick = btnGrubLjaponvClick
     TabOrder = 0
     object BtnLjapunov1: TRadioButton
-      Left = 70
-      Height = 29
-      Top = 56
-      Width = 171
+      Left = 47
+      Height = 19
+      Top = 38
+      Width = 112
       Anchors = []
       Caption = 'Ag*P + P*Ag'' = V'
       OnChange = BtnLjapunov1Change
       TabOrder = 0
     end
     object btnLjapunov2: TRadioButton
-      Left = 70
-      Height = 29
-      Top = 15
-      Width = 182
+      Left = 48
+      Height = 19
+      Top = 10
+      Width = 119
       Anchors = []
       Caption = 'Ag''*P + P*Ag = Qx'
       OnChange = btnLjapunov2Change
       TabOrder = 1
     end
     object btnJjapunovS2: TRadioButton
-      Left = 528
-      Height = 29
-      Top = 16
-      Width = 182
+      Left = 352
+      Height = 19
+      Top = 11
+      Width = 119
       Anchors = []
       Caption = 'Ag''*P + P*Ag = Qx'
       OnChange = btnJjapunovS2Change
       TabOrder = 2
     end
     object btnJjapunovS1: TRadioButton
-      Left = 527
-      Height = 29
-      Top = 56
-      Width = 171
+      Left = 351
+      Height = 19
+      Top = 38
+      Width = 112
       Anchors = []
       Caption = 'Ag*P + P*Ag'' = V'
       OnChange = btnJjapunovS1Change
       TabOrder = 3
     end
     object RadioGroup1: TRadioGroup
-      Left = 6
-      Height = 56
-      Top = 88
-      Width = 736
+      Left = -78
+      Height = 37
+      Top = 54
+      Width = 491
       Anchors = []
       AutoFill = True
       Caption = 'Lin. Matrizen Invertierungen'
@@ -85,44 +84,44 @@ object Ljapunov: TLjapunov
       ChildSizing.ShrinkVertical = crsScaleChilds
       ChildSizing.Layout = cclLeftToRightThenTopToBottom
       ChildSizing.ControlsPerLine = 1
-      ClientHeight = 26
-      ClientWidth = 732
+      ClientHeight = 17
+      ClientWidth = 487
       TabOrder = 4
       object btnMinv: TRadioButton
-        Left = 43
-        Height = 29
+        Left = 28
+        Height = 19
         Top = 0
-        Width = 69
+        Width = 47
         Anchors = []
         Caption = 'Minv'
         OnChange = btnMinvChange
         TabOrder = 0
       end
       object btnMaInv: TRadioButton
-        Left = 128
-        Height = 29
-        Top = -1
-        Width = 79
+        Left = 85
+        Height = 19
+        Top = 0
+        Width = 53
         Anchors = []
         Caption = 'MaInv'
         OnChange = btnMaInvChange
         TabOrder = 1
       end
       object btnTmInv: TRadioButton
-        Left = 246
-        Height = 29
-        Top = -1
-        Width = 79
+        Left = 163
+        Height = 19
+        Top = 0
+        Width = 54
         Anchors = []
         Caption = 'TmInv'
         OnChange = btnTmInvChange
         TabOrder = 2
       end
       object btnQdif: TEdit
-        Left = 536
-        Height = 33
-        Top = -8
-        Width = 120
+        Left = 343
+        Height = 23
+        Top = -6
+        Width = 80
         Anchors = []
         OnChange = btnQdifChange
         TabOrder = 3
@@ -130,19 +129,19 @@ object Ljapunov: TLjapunov
     end
   end
   object StrGridLjapunov: TStringGrid
-    Left = 240
-    Height = 434
-    Top = 240
-    Width = 640
+    Left = 144
+    Height = 289
+    Top = 176
+    Width = 464
     ColCount = 9
     RowCount = 9
     TabOrder = 1
   end
   object ViewGroup: TRadioGroup
-    Left = 40
-    Height = 408
-    Top = 224
-    Width = 158
+    Left = 22
+    Height = 272
+    Top = 149
+    Width = 105
     Anchors = [akTop]
     AutoFill = True
     Caption = 'View'
@@ -153,84 +152,84 @@ object Ljapunov: TLjapunov
     ChildSizing.ShrinkVertical = crsScaleChilds
     ChildSizing.Layout = cclLeftToRightThenTopToBottom
     ChildSizing.ControlsPerLine = 1
-    ClientHeight = 378
-    ClientWidth = 154
+    ClientHeight = 252
+    ClientWidth = 101
     TabOrder = 2
     object btnViewA: TRadioButton
-      Left = 16
-      Height = 29
-      Top = 24
-      Width = 42
+      Left = 10
+      Height = 19
+      Top = 16
+      Width = 28
       Anchors = []
       Caption = 'A'
       OnChange = btnViewAChange
       TabOrder = 0
     end
     object btnViewAt: TRadioButton
-      Left = 15
-      Height = 29
-      Top = 56
-      Width = 53
+      Left = 10
+      Height = 19
+      Top = 37
+      Width = 35
       Anchors = [akTop]
       Caption = 'Ag'
       OnChange = btnViewAtChange
       TabOrder = 1
     end
     object btnViewP: TRadioButton
-      Left = 18
-      Height = 29
-      Top = 104
-      Width = 40
+      Left = 12
+      Height = 19
+      Top = 69
+      Width = 27
       Anchors = [akTop]
       Caption = 'P'
       OnChange = btnViewPChange
       TabOrder = 2
     end
     object btnViewE: TRadioButton
-      Left = 16
-      Height = 29
-      Top = 282
-      Width = 68
+      Left = 10
+      Height = 19
+      Top = 188
+      Width = 45
       Anchors = [akLeft]
       Caption = 'E Eig'
       OnChange = btnViewEChange
       TabOrder = 3
     end
     object btnViewQ: TRadioButton
-      Left = 12
-      Height = 29
-      Top = 152
-      Width = 52
+      Left = 8
+      Height = 19
+      Top = 101
+      Width = 34
       Anchors = []
       Caption = 'Qx'
       OnChange = btnViewQChange
       TabOrder = 4
     end
     object btnViewU: TRadioButton
-      Left = 16
-      Height = 29
-      Top = 192
-      Width = 42
+      Left = 10
+      Height = 19
+      Top = 128
+      Width = 28
       Anchors = []
       Caption = 'U'
       OnChange = btnViewUChange
       TabOrder = 5
     end
     object btnViewSU: TRadioButton
-      Left = 16
-      Height = 29
-      Top = 224
-      Width = 52
+      Left = 11
+      Height = 19
+      Top = 149
+      Width = 34
       Anchors = [akLeft]
       Caption = 'SU'
       OnChange = btnViewSUChange
       TabOrder = 6
     end
     object btnViewEv: TRadioButton
-      Left = 16
-      Height = 29
-      Top = 328
-      Width = 73
+      Left = 10
+      Height = 19
+      Top = 219
+      Width = 48
       Anchors = []
       Caption = 'E Vek'
       OnChange = btnViewEvChange
@@ -238,16 +237,74 @@ object Ljapunov: TLjapunov
     end
   end
   object btnCloseView: TButton
-    Left = 848
-    Height = 38
-    Top = 64
-    Width = 113
+    Left = 565
+    Height = 25
+    Top = 43
+    Width = 75
     Caption = 'CloseView'
     OnClick = btnCloseViewClick
     TabOrder = 3
   end
+  object RadioGroup2: TRadioGroup
+    Left = 624
+    Height = 272
+    Top = 176
+    Width = 185
+    AutoFill = True
+    Caption = 'Eigenwerte'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 252
+    ClientWidth = 181
+    TabOrder = 4
+    object rbBalance: TRadioButton
+      Left = 6
+      Height = 19
+      Top = 16
+      Width = 61
+      Anchors = [akLeft]
+      Caption = 'Balance'
+      OnChange = rbBalanceChange
+      TabOrder = 0
+    end
+    object rbQrthes: TRadioButton
+      Left = 6
+      Height = 19
+      Top = 40
+      Width = 63
+      Anchors = [akLeft]
+      Caption = 'ORTHes'
+      OnChange = rbQrthesChange
+      TabOrder = 1
+    end
+    object rbEwHes: TRadioButton
+      Left = 83
+      Height = 19
+      Top = 16
+      Width = 55
+      Anchors = [akLeft]
+      Caption = 'EwHes'
+      OnChange = rbEwHesChange
+      TabOrder = 2
+    end
+    object rbQrTrans: TRadioButton
+      Left = 6
+      Height = 19
+      Top = 64
+      Width = 62
+      Anchors = [akLeft]
+      Caption = 'QrTrans'
+      OnChange = rbQrTransChange
+      TabOrder = 3
+    end
+  end
   object MainMenu1: TMainMenu
-    Left = 96
-    Top = 624
+    Left = 64
+    Top = 416
   end
 end

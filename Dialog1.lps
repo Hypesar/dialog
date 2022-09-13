@@ -20,9 +20,8 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uDialoge"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="47"/>
-        <CursorPos X="48" Y="70"/>
+        <TopLine Value="68"/>
+        <CursorPos X="3" Y="91"/>
         <UsageCount Value="210"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -45,8 +44,8 @@
         <IsPartOfProject Value="True"/>
         <UnitName Value="uDaten"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="65"/>
-        <CursorPos X="8" Y="76"/>
+        <TopLine Value="52"/>
+        <CursorPos X="13" Y="74"/>
         <UsageCount Value="271"/>
         <Loaded Value="True"/>
       </Unit>
@@ -56,9 +55,10 @@
         <ComponentName Value="Ljapunov"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="282"/>
-        <CursorPos X="15" Y="202"/>
+        <TopLine Value="412"/>
+        <CursorPos X="5" Y="422"/>
         <UsageCount Value="202"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -70,7 +70,7 @@
         <EditorIndex Value="7"/>
         <TopLine Value="253"/>
         <CursorPos Y="265"/>
-        <UsageCount Value="124"/>
+        <UsageCount Value="161"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -79,13 +79,13 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="294"/>
         <CursorPos Y="334"/>
-        <UsageCount Value="83"/>
+        <UsageCount Value="81"/>
       </Unit>
       <Unit>
         <Filename Value="uLak.PAS"/>
         <EditorIndex Value="4"/>
-        <TopLine Value="756"/>
-        <CursorPos Y="768"/>
+        <TopLine Value="1239"/>
+        <CursorPos X="11" Y="817"/>
         <UsageCount Value="106"/>
         <Loaded Value="True"/>
       </Unit>
@@ -103,129 +103,129 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="11193"/>
         <CursorPos Y="11205"/>
-        <UsageCount Value="55"/>
+        <UsageCount Value="53"/>
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
       <Position>
+        <Filename Value="uLak.PAS"/>
+        <Caret Line="778" TopLine="754"/>
+      </Position>
+      <Position>
+        <Filename Value="uLak.PAS"/>
+        <Caret Line="779" TopLine="754"/>
+      </Position>
+      <Position>
+        <Filename Value="uLak.PAS"/>
+        <Caret Line="780" TopLine="754"/>
+      </Position>
+      <Position>
+        <Filename Value="uLak.PAS"/>
+        <Caret Line="779" TopLine="754"/>
+      </Position>
+      <Position>
+        <Filename Value="uLak.PAS"/>
+        <Caret Line="782" TopLine="757"/>
+      </Position>
+      <Position>
+        <Filename Value="uLak.PAS"/>
+        <Caret Line="783" TopLine="757"/>
+      </Position>
+      <Position>
+        <Filename Value="uLak.PAS"/>
+        <Caret Line="784" TopLine="757"/>
+      </Position>
+      <Position>
+        <Filename Value="uLak.PAS"/>
+        <Caret Line="772" TopLine="764"/>
+      </Position>
+      <Position>
+        <Filename Value="uLak.PAS"/>
+        <Caret Line="791" TopLine="764"/>
+      </Position>
+      <Position>
+        <Filename Value="uLak.PAS"/>
+        <Caret Line="793" TopLine="761"/>
+      </Position>
+      <Position>
+        <Filename Value="uLak.PAS"/>
+        <Caret Line="791" TopLine="761"/>
+      </Position>
+      <Position>
+        <Filename Value="uLak.PAS"/>
+        <Caret Line="790" TopLine="761"/>
+      </Position>
+      <Position>
+        <Filename Value="uLak.PAS"/>
+        <Caret Line="793" TopLine="776"/>
+      </Position>
+      <Position>
+        <Filename Value="uLak.PAS"/>
+        <Caret Line="799" TopLine="773"/>
+      </Position>
+      <Position>
+        <Filename Value="uLak.PAS"/>
+        <Caret Line="804" TopLine="773"/>
+      </Position>
+      <Position>
+        <Filename Value="uLak.PAS"/>
+        <Caret Line="805" TopLine="773"/>
+      </Position>
+      <Position>
+        <Filename Value="uLak.PAS"/>
+        <Caret Line="803" TopLine="773"/>
+      </Position>
+      <Position>
+        <Filename Value="uLak.PAS"/>
+        <Caret Line="804" TopLine="773"/>
+      </Position>
+      <Position>
+        <Filename Value="uLak.PAS"/>
+        <Caret Line="802" TopLine="773"/>
+      </Position>
+      <Position>
+        <Filename Value="uLak.PAS"/>
+        <Caret Line="806" TopLine="773"/>
+      </Position>
+      <Position>
+        <Filename Value="uLak.PAS"/>
+        <Caret Line="799" TopLine="773"/>
+      </Position>
+      <Position>
+        <Filename Value="uLak.PAS"/>
+        <Caret Line="804" Column="54" TopLine="773"/>
+      </Position>
+      <Position>
+        <Filename Value="uLak.PAS"/>
+        <Caret Line="810" TopLine="787"/>
+      </Position>
+      <Position>
+        <Filename Value="uLak.PAS"/>
+        <Caret Line="812" TopLine="787"/>
+      </Position>
+      <Position>
         <Filename Value="urunmode.pas"/>
-        <Caret Line="357" Column="44" TopLine="348"/>
+        <Caret Line="9" Column="42"/>
       </Position>
       <Position>
         <Filename Value="urunmode.pas"/>
-        <Caret Line="201" Column="46" TopLine="189"/>
+        <Caret Line="460" Column="21" TopLine="414"/>
       </Position>
       <Position>
         <Filename Value="urunmode.pas"/>
-        <Caret Line="179" Column="2" TopLine="167"/>
+        <Caret Line="475" Column="4" TopLine="188"/>
       </Position>
       <Position>
         <Filename Value="urunmode.pas"/>
-        <Caret Line="201" Column="8"/>
+        <Caret Line="480" Column="37" TopLine="443"/>
       </Position>
       <Position>
         <Filename Value="urunmode.pas"/>
-        <Caret Line="96" TopLine="89"/>
-      </Position>
-      <Position>
-        <Filename Value="uLak.PAS"/>
-        <Caret Line="362" TopLine="351"/>
-      </Position>
-      <Position>
-        <Filename Value="uLak.PAS"/>
-        <Caret Line="368" TopLine="351"/>
+        <Caret Line="202" Column="3" TopLine="426"/>
       </Position>
       <Position>
         <Filename Value="urunmode.pas"/>
-        <Caret Line="96" TopLine="89"/>
-      </Position>
-      <Position>
-        <Filename Value="uLak.PAS"/>
-        <Caret Line="362" TopLine="351"/>
-      </Position>
-      <Position>
-        <Filename Value="udaten.pas"/>
-        <Caret Line="104" Column="23" TopLine="86"/>
-      </Position>
-      <Position>
-        <Filename Value="uLak.PAS"/>
-        <Caret Line="371" TopLine="351"/>
-      </Position>
-      <Position>
-        <Filename Value="urunmode.pas"/>
-        <Caret Line="96" TopLine="89"/>
-      </Position>
-      <Position>
-        <Filename Value="urunmode.pas"/>
-        <Caret Line="295" Column="2" TopLine="291"/>
-      </Position>
-      <Position>
-        <Filename Value="urunmode.pas"/>
-        <Caret Line="329" Column="4" TopLine="316"/>
-      </Position>
-      <Position>
-        <Filename Value="uLak.PAS"/>
-        <Caret Line="716" TopLine="710"/>
-      </Position>
-      <Position>
-        <Filename Value="uLak.PAS"/>
-        <Caret Line="746" TopLine="734"/>
-      </Position>
-      <Position>
-        <Filename Value="uLak.PAS"/>
-        <Caret Line="1215" Column="24" TopLine="1212"/>
-      </Position>
-      <Position>
-        <Filename Value="uLak.PAS"/>
-        <Caret Line="762" Column="11" TopLine="749"/>
-      </Position>
-      <Position>
-        <Filename Value="uLak.PAS"/>
-        <Caret Line="760" Column="34" TopLine="756"/>
-      </Position>
-      <Position>
-        <Filename Value="uLak.PAS"/>
-        <Caret Line="787" TopLine="775"/>
-      </Position>
-      <Position>
-        <Filename Value="uLak.PAS"/>
-        <Caret Line="1225" TopLine="1213"/>
-      </Position>
-      <Position>
-        <Filename Value="uLak.PAS"/>
-        <Caret Line="1216" Column="55" TopLine="1213"/>
-      </Position>
-      <Position>
-        <Filename Value="utools.pas"/>
-        <Caret Line="265" TopLine="253"/>
-      </Position>
-      <Position>
-        <Filename Value="uLak.PAS"/>
-        <Caret Line="716" TopLine="707"/>
-      </Position>
-      <Position>
-        <Filename Value="uLak.PAS"/>
-        <Caret Line="718" TopLine="707"/>
-      </Position>
-      <Position>
-        <Filename Value="uLak.PAS"/>
-        <Caret Line="714" Column="24" TopLine="700"/>
-      </Position>
-      <Position>
-        <Filename Value="uLak.PAS"/>
-        <Caret Line="706" Column="42" TopLine="706"/>
-      </Position>
-      <Position>
-        <Filename Value="uLak.PAS"/>
-        <Caret Line="736" TopLine="721"/>
-      </Position>
-      <Position>
-        <Filename Value="uLak.PAS"/>
-        <Caret Line="726" TopLine="721"/>
-      </Position>
-      <Position>
-        <Filename Value="uLak.PAS"/>
-        <Caret Line="716" TopLine="704"/>
+        <Caret Line="480" Column="40" TopLine="443"/>
       </Position>
     </JumpHistory>
     <RunParams>
@@ -253,6 +253,20 @@
         <WatchKind Value="wpkWrite"/>
         <Source Value="uLak.PAS"/>
         <Line Value="451"/>
+      </Item>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="uLak.PAS"/>
+        <Line Value="502"/>
+      </Item>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="uLak.PAS"/>
+        <Line Value="496"/>
       </Item>
     </BreakPoints>
   </Debugging>

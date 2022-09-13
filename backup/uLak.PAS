@@ -595,7 +595,7 @@ iteration:
        f:=f/basis; c:=c/b2;
       end;
 
-      g:=r*basis;
+  //  g:=r*basis;
  (*
       L3:
             IF c < g THEN BEGIN f:=f*basis; c:=c*b2; GOTO L3; END;

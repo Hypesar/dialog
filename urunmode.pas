@@ -32,7 +32,12 @@ type
     btnMinv: TRadioButton;
     btnMaInv: TRadioButton;
     btnTmInv: TRadioButton;
+    rbQrTrans: TRadioButton;
+    rbEwHes: TRadioButton;
+    rbQrthes: TRadioButton;
+    rbBalance: TRadioButton;
     RadioGroup1: TRadioGroup;
+    RadioGroup2: TRadioGroup;
     ViewGroup: TRadioGroup;
     StrGridLjapunov: TStringGrid;
     procedure btnCloseViewClick(Sender: TObject);
@@ -56,6 +61,10 @@ type
     procedure btnJjapunovS2Change(Sender: TObject);
     procedure btnJjapunovS1Change(Sender: TObject);
     procedure btnMaInvChange(Sender: TObject);
+    procedure rbBalanceChange(Sender: TObject);
+    procedure rbEwHesChange(Sender: TObject);
+    procedure rbQrthesChange(Sender: TObject);
+    procedure rbQrTransChange(Sender: TObject);
   private
 
   public
@@ -377,6 +386,107 @@ end;
 procedure TLjapunov.btnMaInvChange(Sender: TObject);
 begin
   Mainvsel:=2;
+end;
+
+procedure TLjapunov.rbBalanceChange(Sender: TObject);
+Var
+    i,j  : Integer;
+  begin
+   // Ag'*P + P*Ag = V
+   A_BKC (N,M,P,A,B,K,C,Ag);
+   Az:=Ag; Qz:=V;
+
+   BALANCE (n,Ag,low, upp, Ew);
+
+   StrGridLjapunov.ColCount:= N+1;
+   StrGridLjapunov.RowCount:= N+1;
+     //GridInit; //Beschriftung den Tabelle
+     StrGridLjapunov.cells[0,0]:= 'Ag';
+     for i:=1 to N do StrGridLjapunov.cells[0,i]:=FloatToStr(i);
+     for i:=1 to N do StrGridLjapunov.cells[i,0]:=FloatToStr(i);
+
+   for j:=1 to N do begin
+     for i:=1 to N do begin
+        StrGridLjapunov.cells[j,i]:=FloatToStr(Ag[j+N*(i-1)]);
+     end;
+   end;
+
+
+
+end;
+
+procedure TLjapunov.rbEwHesChange(Sender: TObject);
+Var
+    i,j  : Integer;
+  begin
+  
+ StrGridLjapunov.ColCount:= 3;   // Spalten
+ StrGridLjapunov.RowCount:= N+1; // Zeilen
+ StrGridLjapunov.cells[0,0]:= 'EwHes';
+ StrGridLjapunov.cells[1,0]:= 'Real';
+ StrGridLjapunov.cells[2,0]:= 'Imag';
+
+ for i:=1 to N do StrGridLjapunov.cells[0,i]:=FloatToStr(i);
+ for i:=1 to N do StrGridLjapunov.cells[1,i]:=FloatToStr(Ew[i]);
+// for i:=1 to N do StrGridLjapunov.cells[2,i]:=FloatToStr(Wi[i]);
+
+
+end;
+
+procedure TLjapunov.rbQrthesChange(Sender: TObject);
+Var
+    i,j  : Integer;
+  begin
+
+   A_BKC (N,M,P,A,B,K,C,Ag);
+   Az:=Ag; Qz:=V;
+
+   BALANCE (n,Ag,low, upp, Ew);
+
+   Orthes (n,low, upp, Ag, Ew);
+
+   StrGridLjapunov.ColCount:= N+1;
+   StrGridLjapunov.RowCount:= N+1;
+     //GridInit; //Beschriftung den Tabelle
+     StrGridLjapunov.cells[0,0]:= 'Ag';
+     for i:=1 to N do StrGridLjapunov.cells[0,i]:=FloatToStr(i);
+     for i:=1 to N do StrGridLjapunov.cells[i,0]:=FloatToStr(i);
+
+   for j:=1 to N do begin
+     for i:=1 to N do begin
+        StrGridLjapunov.cells[j,i]:=FloatToStr(Ag[j+N*(i-1)]);
+     end;
+   end;
+
+end;
+
+procedure TLjapunov.rbQrTransChange(Sender: TObject);
+Var
+    i,j  : Integer;
+  begin
+
+   A_BKC (N,M,P,A,B,K,C,Ag);
+   Az:=Ag; Qz:=V;
+
+   BALANCE (n,Ag,low, upp, Ew);
+
+   Orthes (n,low, upp, Ag, Ew);
+
+   ORTRANS (n,low,upp, Ag, He, Ew);
+
+   StrGridLjapunov.ColCount:= N+1;
+   StrGridLjapunov.RowCount:= N+1;
+     //GridInit; //Beschriftung den Tabelle
+     StrGridLjapunov.cells[0,0]:= 'Hess';
+     for i:=1 to N do StrGridLjapunov.cells[0,i]:=FloatToStr(i);
+     for i:=1 to N do StrGridLjapunov.cells[i,0]:=FloatToStr(i);
+
+   for j:=1 to N do begin
+     for i:=1 to N do begin
+        StrGridLjapunov.cells[j,i]:=FloatToStr(He[j+N*(i-1)]);
+     end;
+   end;
+
 end;
 
 end.

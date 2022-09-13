@@ -1,16 +1,15 @@
 object OptArf: TOptArf
-  Left = 414
-  Height = 528
-  Top = 300
-  Width = 323
+  Left = 939
+  Height = 352
+  Top = 432
+  Width = 215
   Caption = 'OptArf'
-  DesignTimePPI = 144
   Menu = MainMenu1
   OnCreate = FormCreate
   LCLVersion = '2.2.2.0'
   object MainMenu1: TMainMenu
-    Left = 32
-    Top = 384
+    Left = 21
+    Top = 256
     object MenuDatei: TMenuItem
       Caption = '&Datei'
       object MenuLoad: TMenuItem
@@ -43,7 +42,7 @@ object OptArf: TOptArf
   end
   object OpenDialog1: TOpenDialog
     Filter = '*.m'
-    Left = 144
-    Top = 384
+    Left = 96
+    Top = 256
   end
 end
