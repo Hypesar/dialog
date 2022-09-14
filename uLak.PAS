@@ -527,7 +527,7 @@ BEGIN  (* BALANCE *)
        j:=j-1;
     end;
    r:=r;
-
+  (*
   { search for columns isolating an eigenvalue and push them left }
   j:=1;
   while j<=k do begin
@@ -542,9 +542,9 @@ BEGIN  (* BALANCE *)
        j:=j+1;
     end;
   c:=c;
-
+ *)
    { search for rows isolating an eigenvalue and push them down }
-(*
+
   L1:
   FOR j:=k DOWNTO 1 DO
     BEGIN
@@ -559,9 +559,8 @@ BEGIN  (* BALANCE *)
         BEGIN exc(k); k:=Pred(k); GOTO L1; END
     END;
 
-*)
   { search for columns isolating an eigenvalue and push them left }
-(*
+
 L2:
   FOR j:=l TO k DO
     BEGIN
@@ -571,7 +570,7 @@ L2:
       IF c=0.0 THEN
         BEGIN exc(l); l:=Succ(l); GOTO L2; END
     END;
-*)
+
   { now balance the submatrix in rows l through k }
   low:=l; upp:=k;
   FOR i:=l TO k DO d[i]:=1;
@@ -585,8 +584,7 @@ iteration:
       FOR j:=Succ(i) TO k DO
         BEGIN c:=c+ABS(a[j+n*Pred(i)]); r:=r+ABS(a[i+n*Pred(j)]) END;
       g:=r/basis; f:=1.0; s:=c+r;
-
-
+(*
       while c < g do BEGIN
        f:=f*basis; c:=c*b2;
       end;
@@ -594,15 +592,13 @@ iteration:
       while c >= g do BEGIN
        f:=f/basis; c:=c/b2;
       end;
-
+*)
       g:=r*basis;
- (*
+
       L3:
             IF c < g THEN BEGIN f:=f*basis; c:=c*b2; GOTO L3; END;
 L4:
       IF c >= g THEN BEGIN f:=f/basis; c:=c/b2; GOTO L4; END;
-
-*)
 
       IF (c+r)/f < 0.95*s THEN
         BEGIN
@@ -807,7 +803,8 @@ BEGIN
           FOR j:=m TO l DO
             BEGIN ij:=i+n*Pred(j); a[ij]:=a[ij]-f*d[j] END
         END;
-skip: a[m+n*(m-2)]:=g;
+skip:
+        a[m+n*(m-2)]:=g;
   END
  END;  { ORTHES }
 

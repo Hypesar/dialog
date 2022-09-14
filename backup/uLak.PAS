@@ -595,7 +595,7 @@ iteration:
        f:=f/basis; c:=c/b2;
       end;
 
-  //  g:=r*basis;
+      g:=r*basis;
  (*
       L3:
             IF c < g THEN BEGIN f:=f*basis; c:=c*b2; GOTO L3; END;
@@ -807,7 +807,8 @@ BEGIN
           FOR j:=m TO l DO
             BEGIN ij:=i+n*Pred(j); a[ij]:=a[ij]-f*d[j] END
         END;
-skip: a[m+n*(m-2)]:=g;
+skip:
+        a[m+n*(m-2)]:=g;
   END
  END;  { ORTHES }
 

@@ -70,8 +70,9 @@ VAR
            V: Mat; { N, N Kovarianzmatrix x0}
            W: Mat; { P, P Kovarianzmatrix y0}
            U: Mat; { N, N Hesse-Transform }
-          SU: Mat; { N, N Schur U-Matrix}
 
+          SU: Mat; { N, N Schur U-Matrix}
+          He: Mat; { N, N Hesse-Transform }
            H: MUH; {Nk,Nk Hesse-Matrix Achtung DIM-Explosionsgefahr!}
      //      U: MUH; {Nk,Nk Gütefuntions-Wichtungsmatrix}
 
@@ -89,10 +90,12 @@ VAR
       Gi_Vek: Mat;
      Gi_Pred: Mat;
       hi_Vek: Mat; {Nur in Gradient verwaltet}
+          Db: Vek; {Balance}
           Ew: Vek;
           Pm: Vek;
           Wr: Vek;
           Wi: Vek;
+         cnt: Vek;
 {Definition von Skalaren-Variablen}
 
 N,M,P      : Integer;     {Zustandsraum-Dimensionen}
